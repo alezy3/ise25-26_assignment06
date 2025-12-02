@@ -23,7 +23,7 @@ public interface UserDataService {
 //     *
 //     * @return a list of all user entities; never null, but may be empty
 //     */
-//    @NonNull List<User> getAll();
+    @NonNull List<User> getAll();
 //
 //    /**
 //     * Retrieves a single user entity by its unique identifier and returns it as a domain object.
@@ -32,7 +32,7 @@ public interface UserDataService {
 //     * @return the user with the specified ID; never null
 //     * @throws NotFoundException if no user exists with the given ID
 //     */
-//    @NonNull User getById(@NonNull Long id);
+    @NonNull User getById(@NonNull Long id);
 //
 //    /**
 //     * Retrieves a single user entity by its unique login name and returns it as a domain object.
@@ -41,7 +41,7 @@ public interface UserDataService {
 //     * @return the user with the specified login name; never null
 //     * @throws NotFoundException if no user exists with the given login name
 //     */
-//    @NonNull User getByLoginName(@NonNull String loginName);
+    @NonNull User getByLoginName(@NonNull String loginName);
 //
 //    /**
 //     * Creates a new user or updates an existing one.
@@ -52,7 +52,7 @@ public interface UserDataService {
 //     * @return the persisted user entity with updated timestamps and ID as a domain object; never null
 //     * @throws NotFoundException if attempting to update a user that does not exist
 //     */
-//    @NonNull User upsert(@NonNull User user);
+    @NonNull User upsert(@NonNull User user);
 //
 //    /**
 //     * Deletes a user by their unique identifier.
@@ -60,5 +60,5 @@ public interface UserDataService {
 //     * @param id the unique identifier of the user to delete; must not be null
 //     * @throws NotFoundException if no user exists with the given ID
 //     */
-//    void delete(@NonNull Long id);
+    void delete(@NonNull Long id);
 }
